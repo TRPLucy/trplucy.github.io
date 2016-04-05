@@ -144,6 +144,7 @@ section#form {
 }
 .slider-label .right {
 	text-align: right;
+	float:right;
 }
 .slider {
 	padding-top: 5px; 
@@ -167,12 +168,6 @@ section#form {
 		width: 65%;
 	}
 }
-@media (max-width: 400px) {
-	.slider-label .right {
-		padding-right: 0.3%
-	}
-}
-
 /* beds, baths, etc*/
 .last-row {
 	padding-top: 20px; 
