@@ -1,6 +1,6 @@
 ## Pages
 
-#### [main landing page](site.html)
+#### [main landing page](index.html)
 
 #### [form page](form.html)
 
