@@ -1,0 +1,505 @@
+/** 
+changes:
+    - removed font: Montserrat, from a few places
+ **/
+
+body {
+    overflow-x: hidden;
+    font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+.text-muted {
+    color: #777
+}
+.text-primary {
+    color: #da2328
+}
+p {
+    font-size: 14.5px;
+    line-height: 1.75
+}
+p.large {
+    font-size: 16px
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0
+}
+a {
+    color: #da2328
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #c41f24
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700
+}
+.img-centered {
+    margin: 0 auto
+}
+.bg-light-gray {
+    background-color: #f7f7f7
+}
+.bg-darkest-gray {
+    background-color: #222
+}
+.navbar-default img {
+    display: inline-block;
+    margin-top: -1.2rem; 
+    height: 4.2rem;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+    border-bottom: 0.35429rem solid #da2328;
+}
+.navbar-default .navbar-brand {
+    color: #da2328;
+    font-family: "Helvetica Neue", Helvetica, Arial, cursive
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #c41f24
+}
+.navbar-default .navbar-collapse {
+    border-color: rgba(255, 255, 255, .02)
+}
+.navbar-default .navbar-toggle {
+    background-color: #da2328;
+    border-color: #da2328
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #da2328
+}
+.navbar-default .nav li a {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #463E3F
+}
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    color: #da2328;
+    outline: 0
+}
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #da2328
+}
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #c41f24
+}
+
+@media (min-width: 768px) {
+    .navbar-default {
+        background-color: #fff;
+        padding: 16px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px
+    }
+    .navbar-default.navbar-shrink {
+        background-color: #fff;
+        padding: 7px 0
+    }
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em
+    }
+}
+
+header {
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #463E3F
+}
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: white;
+}
+header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px
+}
+header .intro-text .intro-heading {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px
+}
+header img {
+    width: 80%;
+}
+@media (min-width: 768px) {
+    header img {
+        width: 60%;
+    }
+}
+@media (min-width: 1200px) {
+    header img {
+        width: 50%;
+    }
+}
+
+/* ------------ START email signup bar --------------- */
+.email-signup {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(600,600,600,0.3);
+    border-radius: 4px;
+}
+.email-signup .form-control {
+    box-shadow: none;
+    font-size: 18px;
+    border-width: 0px; 
+    border-radius: 3px;
+}
+.email-signup span {
+    background-color: #da2328;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-width: 2px;
+    border-radius: 3px;
+}
+.email-signup span:hover {
+    background-color: #c41f24;
+}
+
+@media (max-width:505px) { 
+    .email-signup {
+        display: block;
+        width: 100%;
+        padding: 22px;
+    }
+    .email-signup .form-control {
+        border-top-right-radius: 2px !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-top-left-radius: 2px !important; 
+        padding: 22px;
+    }
+    .email-signup .input-group-addon {
+        clear: both;
+        display: block;
+        margin-top:5px;
+        width: 100%;
+        padding: 13px;
+        border-radius: 2px;
+        border-top-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        border-left: 2px solid #fff!important;
+    }
+    .email-signup .input-group-addon + .form-control {
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width:506px) { 
+    .email-signup {
+        width: 100%;
+    }
+    .email-signup .form-control {
+        font-size: 18px;
+        padding: 23px;
+    }
+}
+
+@media (min-width: 768px) {
+    .email-signup {
+        width: 100%;
+        padding: 25px;
+    }
+    .email-signup .form-control {
+        font-size: 20px;
+        padding: 25px;
+    }
+    .email-signup span {
+        font-size: 18px;
+        padding: 0 40px        
+    }
+}
+@media(min-width: 1200px) {
+    .email-signup {
+        width: 70%;
+    }
+}
+/* ------------ END email signup bar --------------- */
+
+@media (min-width: 768px) {
+    header .container {
+        height: 650px;
+    }
+    header .intro-text {
+        padding-top: 230px;
+        padding-bottom: 200px
+    }
+    header .intro-text .intro-lead-in {
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 20px
+    }
+    header .intro-text .intro-heading {
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 70px;
+        line-height: 75px;
+        margin-bottom: 10px
+    }
+}
+section {
+    padding: 80px 0
+}
+section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+section h3.section-subheading {
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px
+}
+@media (min-width: 768px) {
+    section {
+        padding: 80px 0
+    }
+}
+
+/* --------------- START testimonials -------------------- */
+blockquote {
+  border: none;
+  margin: 0;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  font-family: Helvetica;
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-style: italic;
+}
+blockquote:after { 
+    font-family: Helvetica;
+    content: close-quote;
+    font-size: 4em;
+    color: #ccc;
+    line-height: 0.1em;
+    margin-left: 0.25em;
+    vertical-align: -0.6em;
+}
+section#testimonials {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 50px;
+    padding-bottom: 190px
+}
+#testimonials .container {
+    height: 30px;
+    width: 100%;
+}
+#testimonials img {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#testimonials p {
+    padding-top: 20px; 
+}
+@media (min-width: 500px) {
+    section#testimonials {
+        padding-bottom: 160px
+    }
+}
+@media (min-width: 766px) {
+    #testimonials img {
+        width: 100%;
+        margin: 0px;
+    }
+    section#testimonials {
+        padding: 40px;
+        margin-bottom: 60px;
+    }
+    #testimonials .container {
+        width: 80%;
+    }
+    #testimonials p {
+        padding-top: 0px;
+    }
+}
+@media (min-width: 1200px) {
+    #testimonials .container {
+        width: 60%;
+    }
+    #testimonials img {
+        width: 80%;
+    }
+}
+/* ---------------- END testimonials ------------------- */
+
+
+/* ---------------- START features ------------------- */
+section#features {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+section#features .container {
+    width: 100%;
+}
+section#features .text {
+    padding: 15px 40px;
+}
+
+/* img block */
+section#features .img-block {
+    padding: 0px;
+}
+
+/* img block */
+
+@media (min-width: 766px) {
+    section#features .text {
+        padding: 20px 60px;
+    }
+}
+@media (min-width: 1200px) {
+    section#features .text {
+        padding: 50px 120px;
+    }
+}
+/* ---------------- END features ------------------- */
+
+
+/* ---------------- START signup ------------------- */
+#signup .container {
+    text-align: center;
+}
+#signup .intro-heading {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+/* ---------------- END signup ------------------- */
+
+/* ---------------- START faq ------------------- */
+#faq h3 {
+    width: 100%;
+}
+#faq p {
+    width: 100%;
+    margin-bottom: 35px; 
+}
+#faq .container {
+    width: 100%;
+}
+section#faq {
+    padding: 20px 0px;
+}
+@media (min-width: 766px) {
+    #faq .container {
+        width: 93%;
+    }
+    #faq h3 {
+        width: 90%;
+    }
+    #faq p {
+        width: 90%;
+    }
+    section#faq {
+        padding: 30px 0px;
+    }
+}
+/* ---------------- END faq ------------------- */
+
+/* ---------------- START footer ------------------- */
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+footer p {
+    color: #fff;
+    font-size: 8px;
+}
+/* ---------------- END footer ------------------- */
+
+::-moz-selection {
+    text-shadow: none;
+    background: #da2328
+}
+::selection {
+    text-shadow: none;
+    background: #da2328
+}
+img::selection {
+    background: 0 0
+}
+img::-moz-selection {
+    background: 0 0
+}
+body {
+    webkit-tap-highlight-color: #da2328
+}

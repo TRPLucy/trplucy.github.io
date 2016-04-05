@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>INSERT TITLE HERE</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="css/form.css" rel="stylesheet"/>
+
+    <!-- Custom Fonts -->
+    <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+ 	
+</head>
+
+<body>
+
+	<section id="heading">
+		<h1>Postea nominati qualisque in quo?</h1>
+	</section>
+ 
+	<section id="form">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 regular-field">
+					<div class="input-group">
+						<span class="input-group-addon">
+							<i class="fa fa-user"></i>
+						</span>
+						<input type="text" class="form-control" placeholder="Full Name"/>
+					</div>
+				</div>
+				<div class="col-sm-6 regular-field">
+					<div class="input-group">
+						<span class="input-group-addon">
+							<i class="fa fa-envelope"></i>
+						</span>
+						<input type="email" class="form-control" placeholder="Email"/>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 regular-field">
+					<div class="input-group">
+						<span class="input-group-addon">
+							<i class="fa fa-phone"></i>
+						</span>
+						<input type="text" class="form-control" placeholder="Phone Number"/>
+					</div>
+				</div>
+				<div class="col-sm-6 regular-field">	
+					<label>
+						<select class="form-control" size="1">
+							<option value="Best Time to Call">Best Time to Call</option>
+							<option value="ASAP">ASAP</option>
+							<option value="Morning">Morning</option>
+							<option value="Afternoon">Afternoon</option>
+							<option value="Evening">Evening</option>
+						</select>
+					</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="divider">
+  					<span class="divider-text">
+    					I'm looking for <!--Padding is optional-->
+  					</span>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 regular-field">
+					<label>
+						<select class="form-control" size="1">
+							<option value="Toronto">Toronto</option>
+						</select>
+					</label>
+				</div>
+				<div class="col-sm-6 regular-field">
+					<label>
+						<select class="form-control" size="1">
+							<option value="All Neighbourhoods">All Neighbourhoods</option>
+						</select>
+					</label>
+				</div>
+			</div>
+
+			<div class="row property-types">
+				<div class="col-xs-6 col-sm-4 checkbox-tile">
+					<input type="checkbox">Condominium
+				</div>
+				<div class="col-xs-6 col-sm-4 checkbox-tile">
+					<input type="checkbox">Condo Townhouse
+				</div>
+				<div class="col-xs-6 col-sm-4 checkbox-tile">
+					<input type="checkbox">Detached
+				</div>
+				<div class="col-xs-6 col-sm-4 checkbox-tile">
+					<input type="checkbox">Semi-Detached
+				</div>
+				<div class="col-xs-6 col-sm-4 checkbox-tile">
+					<input type="checkbox">Townhouse
+				</div>
+				<div class="col-xs-6 col-sm-4 checkbox-tile">
+					<input type="checkbox">Other
+				</div>
+			</div>
+
+			<div class="row slider-label">
+				<div class="col-xs-6">
+					<input type="text" id="min-amount" readonly style="text-align: left;">
+				</div>
+				<div class="col-xs-6" style="text-align: right">
+  					<input type="text" id="max-amount" readonly style="text-align: right;">
+  				</div>
+			</div>
+
+			<div class="row slider">
+				<div class="col-xs-12">
+					<div id="slider-range"></div>
+				</div>
+			</div>
+
+			<div class="row last-row">
+				<div class="col-xs-6 col-sm-2 regular-field">
+					<label>
+						<select class="form-control" size="1">
+							<option value="Best Time to Call">Beds</option>
+							<option value="ASAP">Any</option>
+							<option value="ASAP">0</option>
+							<option value="ASAP">1+</option>
+							<option value="Morning">2+</option>
+							<option value="Afternoon">3+</option>
+						</select>
+					</label>
+				</div>
+				<div class="col-xs-6 col-sm-2 regular-field">
+					<label>
+						<select class="form-control" size="1">
+							<option value="Best Time to Call">Baths</option>
+							<option value="ASAP">Any</option>
+							<option value="ASAP">1+</option>
+							<option value="Morning">2+</option>
+							<option value="Afternoon">3+</option>
+						</select>
+					</label>
+				</div>
+				<div class="col-xs-6 col-sm-4 regular-field">
+					<label>
+						<select class="form-control" size="1">
+							<option value="Best Time to Call">Planning to buy in?</option>
+							<option value="ASAP">0-3 months</option>
+							<option value="Morning">3-6 months</option>
+							<option value="Afternoon">6-12 months</option>
+							<option value="Evening">12 months +</option>
+						</select>
+					</label>
+				</div>
+				<div class="col-xs-6 col-sm-4 regular-field">
+					<label>
+						<select class="form-control" size="1">
+							<option value="Best Time to Call">Has secured financing?</option>
+							<option value="ASAP">Yes</option>
+							<option value="Morning">No</option>
+						</select>
+					</label>
+				</div>
+			</div>
+
+			<div class="row signup-btn">
+				<button type="button" class="btn">Sign Up</button>
+			</div>
+
+		</div>
+	</section>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <!-- preventing jquery from being messed up on mobile --> 
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+  <script>
+	$(function() {
+	  $( "#slider-range" ).slider({
+	    range: true,
+	    min: 0,
+	    max: 2000000,
+	    values: [ 500000, 1500000 ],
+	    step: 100000,
+	    slide: function( event, ui ) {
+	      $( "#min-amount" ).val( '$' + ui.values[ 0 ].formatMoney(0));
+	      if (ui.values[ 1 ] ==  2000000) {
+	      	$( "#max-amount" ).val( '$' + ui.values[ 1 ].formatMoney(0) + '+');
+	      } else {
+	      	$( "#max-amount" ).val( '$' + ui.values[ 1 ].formatMoney(0) );
+	      } 
+	    }
+	  });
+	  $( "#min-amount" ).val( '$' + $( "#slider-range" ).slider( "values", 0 ).formatMoney(0));
+	  $( "#max-amount" ).val( '$' + $( "#slider-range" ).slider( "values", 1 ).formatMoney(0));
+	});
+  </script>
+
+  <script>
+  	Number.prototype.formatMoney = function(c, d, t){
+	var n = this, 
+	    c = isNaN(c = Math.abs(c)) ? 2 : c, 
+	    d = d == undefined ? "." : d, 
+	    t = t == undefined ? "," : t, 
+	    s = n < 0 ? "-" : "", 
+	    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", 
+	    j = (j = i.length) > 3 ? j % 3 : 0;
+	   return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).	toFixed(c).slice(2) : "");
+	 };
+  </script>
+
+</body>
+
+</html>
