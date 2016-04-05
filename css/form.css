@@ -64,6 +64,7 @@ body {
 }
 section#form {
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
 @media (min-width: 768px) {
 	body {
@@ -138,6 +139,12 @@ section#form {
 	margin: 0;
 	padding: 0;
 }
+.slider-label .left {
+	text-align: left;
+}
+.slider-label .right {
+	text-align: right;
+}
 .slider {
 	padding-top: 5px; 
 }
@@ -158,6 +165,11 @@ section#form {
 	}
 	.slider-label {
 		width: 65%;
+	}
+}
+@media (max-width: 400px) {
+	.slider-label .right {
+		padding-right:1%
 	}
 }
 
