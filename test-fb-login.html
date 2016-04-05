@@ -65,6 +65,11 @@
 
   };
 
+  FB.login(function(response){
+  // Handle the response object, like in statusChangeCallback() in our demo
+  // code.
+  });
+
   // Load the SDK asynchronously
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -79,6 +84,7 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
+      console.log(response);
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
