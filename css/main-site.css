@@ -221,6 +221,7 @@ header img {
     background-color: #3b5998;
     border-radius: 2px; 
     padding: 0px 10px;
+    cursor: pointer;
 }
 .signup-group .fb-login .fb-btn:hover {
     background-color: #2f4779
@@ -280,12 +281,19 @@ header img {
         vertical-align: middle;
         width: 38%;
     }
+    .signup-group .fb-login {
+        padding-top:  0;
+    }
     .signup-group .fb-login .fb-btn {
         clear: both;
         width: auto;
         width: 100%;
         display: block;
         padding: 11px; 
+    }
+    .signup-group .fb-login .divider {
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
 }
 
