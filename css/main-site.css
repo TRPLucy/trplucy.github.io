@@ -394,6 +394,7 @@ section#testimonials {
     padding: 6% 0;
 }
 #testimonials .container {
+    overflow: visible; 
     height: auto;
     width: 100%;
     max-width: 600px; 
@@ -434,7 +435,7 @@ section#testimonials {
 #quote-carousel .carousel-control
 {
   background: none;
-  color: #222;
+  color:#222;
   font-size: 2.3em;
   text-shadow: none;
   margin-top: 30px;
@@ -442,12 +443,12 @@ section#testimonials {
 /* Previous button  */
 #quote-carousel .carousel-control.left 
 {
-  left: -30px;
+  left: -6%;
 }
 /* Next button  */
 #quote-carousel .carousel-control.right 
 {
-  right: -12px !important;
+  right: -6% !important;
 }
 /* Changes the position of the indicators */
 #quote-carousel .carousel-indicators 
@@ -472,38 +473,43 @@ section#testimonials {
 /* ---------------- END testimonials ------------------- */
 
 
-/* ---------------- START features ------------------- */
-section#features {
+/* ---------------- START panel-features ------------------- */
+section#panel-features {
     padding: 0;
     margin: 0;
     width: 100%;
 }
-section#features .container {
+section#panel-features .container {
     width: 100%;
 }
-section#features .text {
+section#panel-features .text {
     padding: 15px 40px;
 }
 
 /* img block */
-section#features .img-block {
+section#panel-features .img-block {
     padding: 0px;
 }
 
 /* img block */
 
 @media (min-width: 766px) {
-    section#features .text {
+    section#panel-features .text {
         padding: 20px 60px;
     }
 }
 @media (min-width: 1200px) {
-    section#features .text {
+    section#panel-features .text {
         padding: 50px 120px;
     }
 }
-/* ---------------- END features ------------------- */
+/* ---------------- END panel-features ------------------- */
 
+/* ---------------- START features ---------------- */
+#features .nav li {
+    width: 25%;
+}
+/* ---------------- END features ---------------- */
 
 /* ---------------- START signup ------------------- */
 #signup .container {
