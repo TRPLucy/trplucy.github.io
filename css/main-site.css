@@ -506,6 +506,10 @@ section#panel-features .img-block {
 /* ---------------- END panel-features ------------------- */
 
 /* ---------------- START features ---------------- */
+section#features {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 #features .nav li {
     width: 25%;
 }
