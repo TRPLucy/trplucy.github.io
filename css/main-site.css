@@ -269,6 +269,10 @@ header img {
         width: 70%;
     }
 }
+
+.fb-login {
+    margin: 0 auto;
+}
 /* ------------ END email signup bar --------------- */
 
 @media (min-width: 768px) {
