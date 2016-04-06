@@ -185,43 +185,49 @@ header img {
 
 /* ------------ START email signup bar --------------- */
 .signup-group {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(600,600,600,0.3);
     border-radius: 4px;
+    max-width: 600px;
 }
-.signup-group .form-control {
+.email-group .form-control {
     box-shadow: none;
     font-size: 18px;
     border-width: 0px; 
     border-radius: 3px;
 }
-.signup-group span {
+.email-group span {
     background-color: #da2328;
     border-color: white;
     color: white;
-    cursor: pointer;
     font-size: 18px;
     border-width: 2px;
     border-radius: 3px;
+    cursor: pointer;
 }
-.signup-group .input-group span:hover {
+.email-group span:hover {
     background-color: #c41f24;
 }
+
 .signup-group .fb-login {
     margin: 0 auto;
-    padding-top: 3%
+    padding-top: 2%;
+    font-size: 18px;
 }
-.signup-group .fb-login span {
+.signup-group .fb-login .fb-btn {
     color: white;
     background-color: #3b5998;
-    width: 100px;
     border-radius: 2px; 
-    padding: 6px;
+    padding: 0px 10px;
 }
-.signup-group .fb-login span:hover {
+.signup-group .fb-login .fb-btn:hover {
     background-color: #2f4779
+}
+.signup-group .fb-login .divider .divider-text {
+    display: inline;
+    font-size: 18px;
 }
 
 @media (max-width:505px) { 
@@ -230,14 +236,14 @@ header img {
         width: 100%;
         padding: 22px;
     }
-    .signup-group .form-control {
+    .email-group .form-control {
         border-top-right-radius: 2px !important;
         border-bottom-left-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
         border-top-left-radius: 2px !important; 
         padding: 22px;
     }
-    .signup-group .input-group-addon {
+    .email-group .input-group-addon {
         clear: both;
         display: block;
         margin-top:5px;
@@ -248,35 +254,64 @@ header img {
         border-top-left-radius: 0 !important;
         border-left: 2px solid #fff!important;
     }
-    .signup-group .input-group-addon + .form-control {
+    .email-group .input-group-addon + .form-control {
         border-radius: 4px;
         margin-bottom: 5px;
     }
-    .signup-group .fb-login {
-        padding-top: 5%
+    .signup-group .fb-login .divider .divider-text:before {
+        background: rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+        box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 38%;
+    }
+    .signup-group .fb-login .divider .divider-text:after {
+        background: rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+        box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 38%;
+    }
+    .signup-group .fb-login .fb-btn {
+        clear: both;
+        width: auto;
+        width: 100%;
+        display: block;
+        padding: 11px; 
     }
 }
 
 @media (min-width:506px) { 
-    .signup-group {
-        width: 100%;
-    }
-    .signup-group .form-control {
+    .email-group .form-control {
         font-size: 18px;
         padding: 23px;
+    }
+    .signup-group .fb-login .divider {
+        display: inline;
+    }
+    .signup-group .fb-login .divider-text {
+        padding: 0 13px;
     }
 }
 
 @media (min-width: 768px) {
     .signup-group {
-        width: 100%;
-        padding: 25px;
+        padding: 30px;
+        max-width: 680px; 
     }
-    .signup-group .form-control {
+    .email-group .form-control {
         font-size: 20px;
         padding: 25px;
     }
-    .signup-group span {
+    .email-group span {
         font-size: 18px;
         padding: 0 40px        
     }
