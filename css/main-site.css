@@ -184,20 +184,20 @@ header img {
 }
 
 /* ------------ START email signup bar --------------- */
-.email-signup {
+.signup-group {
     width: 95%;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(600,600,600,0.3);
     border-radius: 4px;
 }
-.email-signup .form-control {
+.signup-group .form-control {
     box-shadow: none;
     font-size: 18px;
     border-width: 0px; 
     border-radius: 3px;
 }
-.email-signup span {
+.signup-group span {
     background-color: #da2328;
     border-color: white;
     color: white;
@@ -206,24 +206,38 @@ header img {
     border-width: 2px;
     border-radius: 3px;
 }
-.email-signup span:hover {
+.signup-group .input-group span:hover {
     background-color: #c41f24;
+}
+.signup-group .fb-login {
+    margin: 0 auto;
+    padding-top: 3%
+}
+.signup-group .fb-login span {
+    color: white;
+    background-color: #3b5998;
+    width: 100px;
+    border-radius: 2px; 
+    padding: 6px;
+}
+.signup-group .fb-login span:hover {
+    background-color: #2f4779
 }
 
 @media (max-width:505px) { 
-    .email-signup {
+    .signup-group {
         display: block;
         width: 100%;
         padding: 22px;
     }
-    .email-signup .form-control {
+    .signup-group .form-control {
         border-top-right-radius: 2px !important;
         border-bottom-left-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
         border-top-left-radius: 2px !important; 
         padding: 22px;
     }
-    .email-signup .input-group-addon {
+    .signup-group .input-group-addon {
         clear: both;
         display: block;
         margin-top:5px;
@@ -234,48 +248,45 @@ header img {
         border-top-left-radius: 0 !important;
         border-left: 2px solid #fff!important;
     }
-    .email-signup .input-group-addon + .form-control {
+    .signup-group .input-group-addon + .form-control {
         border-radius: 4px;
         margin-bottom: 5px;
+    }
+    .signup-group .fb-login {
+        padding-top: 5%
     }
 }
 
 @media (min-width:506px) { 
-    .email-signup {
+    .signup-group {
         width: 100%;
     }
-    .email-signup .form-control {
+    .signup-group .form-control {
         font-size: 18px;
         padding: 23px;
     }
 }
 
 @media (min-width: 768px) {
-    .email-signup {
+    .signup-group {
         width: 100%;
         padding: 25px;
     }
-    .email-signup .form-control {
+    .signup-group .form-control {
         font-size: 20px;
         padding: 25px;
     }
-    .email-signup span {
+    .signup-group span {
         font-size: 18px;
         padding: 0 40px        
     }
 }
 @media(min-width: 1200px) {
-    .email-signup {
+    .signup-group {
         width: 70%;
     }
 }
 
-.fb-login {
-    margin: 0 auto;
-}
-.fb-login a {
-    color: white;
-}
 /* ------------ END email signup bar --------------- */
 
 @media (min-width: 768px) {

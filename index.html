@@ -80,14 +80,20 @@
                 <div class="intro-heading">It's Nice To Meet You</div>
                 <div class="intro-lead-in">All real estate listings on MLS®</div>
 
-                    <div class="input-group email-signup">
-                        <input type="email" class="form-control" placeholder="Your Email" id="email" required data-validation-required-message="Please enter your email address.">
-                        <span class="input-group-addon"> Create Free Account </span>
+                    <div  class="signup-group">
+                        <div class="input-group col-xs-12">
+                            <input type="email" class="form-control" placeholder="Enter Your Email" id="email" required     data-validation-required-message="Please enter your email address.">
+                            <span class="input-group-addon"> Create Free Account </span>
+                        </div>
+                        
+                         <div class="fb-login">
+                            Or 
+                            <span onclick="fb_login();">
+                                <i class="fa fa-facebook-square"></i> Login with Facebook
+                            </span>
+                        </div>
                     </div>
-                    
-                    <div class="fb-login">
-                        Or <a href="#" onclick="fb_login();" >Login with Facebook</a>
-                    </div>
+                   
 
                 <img src="img/landing-icons.png" />
 
@@ -115,7 +121,10 @@
 
     <!-- Features section --> 
     <section id="features" >
+
         <div class="container bg-light-gray">
+
+
             <div class="row" >
                 <div class="col-sm-6 text bg-light-gray" >
                     <h3>
@@ -164,7 +173,7 @@
         <div class="container">
             <div class="intro-heading">It's Nice To Meet You</div>
                     
-                    <div class="input-group email-signup">
+                    <div class="input-group signup-group">
                         <input type="email" class="form-control" placeholder="Your Email" id="email" required data-validation-required-message="Please enter your email address.">
                         <span class="input-group-addon"> Create Free Account </span>
                     </div>
