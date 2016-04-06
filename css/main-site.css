@@ -427,7 +427,7 @@ section#testimonials {
 
 #quote-carousel 
 {
-  padding-bottom: 4%;
+  padding-bottom: 6%;
   margin-top: 5px;
 }
 /* Control buttons  */
@@ -460,11 +460,13 @@ section#testimonials {
 /* Changes the color of the indicators */
 #quote-carousel .carousel-indicators li 
 {
-    background: #c0c0c0;
+    border-width: 2px;
+    border-color: #c0c0c0;
+    background: #fff;
 }
 #quote-carousel .carousel-indicators .active 
 {
-  background: #333333;
+    background: #c0c0c0;
 }
 
 /* ---------------- END testimonials ------------------- */
