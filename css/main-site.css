@@ -273,6 +273,9 @@ header img {
 .fb-login {
     margin: 0 auto;
 }
+.fb-login a {
+    color: white;
+}
 /* ------------ END email signup bar --------------- */
 
 @media (min-width: 768px) {
