@@ -20,20 +20,15 @@ p {
 p.large {
     font-size: 16px
 }
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-    outline: 0
-}
 a {
+    outline: 0;
     color: #da2328
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
+    outline: 0;
     color: #c41f24
 }
 h1,
@@ -429,6 +424,49 @@ section#testimonials {
         max-width: 900px; 
     }
 }
+
+#quote-carousel 
+{
+  padding-bottom: 4%;
+  margin-top: 5px;
+}
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -30px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+    background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+
 /* ---------------- END testimonials ------------------- */
 
 
