@@ -110,7 +110,7 @@ h6 {
 @media (min-width: 768px) {
     .navbar-default {
         background-color: #fff;
-        padding: 16px 0;
+        padding: 10px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -126,7 +126,7 @@ h6 {
     }
     .navbar-default.navbar-shrink {
         background-color: #fff;
-        padding: 7px 0
+        padding: 6px 0
     }
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em
@@ -238,6 +238,7 @@ header img {
         border-bottom-right-radius: 0 !important;
         border-top-left-radius: 2px !important; 
         padding: 22px;
+        text-align: center; 
     }
     .email-group .input-group-addon {
         clear: both;
@@ -474,6 +475,7 @@ section#testimonials {
 
 
 /* ---------------- START panel-features ------------------- */
+/*
 section#panel-features {
     padding: 0;
     margin: 0;
@@ -486,12 +488,9 @@ section#panel-features .text {
     padding: 15px 40px;
 }
 
-/* img block */
 section#panel-features .img-block {
     padding: 0px;
 }
-
-/* img block */
 
 @media (min-width: 766px) {
     section#panel-features .text {
@@ -502,7 +501,7 @@ section#panel-features .img-block {
     section#panel-features .text {
         padding: 50px 120px;
     }
-}
+} */
 /* ---------------- END panel-features ------------------- */
 
 /* ---------------- START features ---------------- */
@@ -510,8 +509,24 @@ section#features {
     padding-top: 1%;
     padding-bottom: 1%;
 }
-#features .nav li {
+#features .nav-tabs {
+    font-size: 20px; 
+}
+#features .nav-tabs .active a{
+    background-color: transparent;
+}
+#features .nav li { 
     width: 25%;
+}
+#features .nav li a {
+    padding: auto 6%;
+}
+#features .content-container {
+    width: 100%: ;
+}
+#features .tab-content {
+    width: 80%;
+    margin: 0 auto;
 }
 /* ---------------- END features ---------------- */
 

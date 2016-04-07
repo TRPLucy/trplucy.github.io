@@ -82,14 +82,14 @@
 
                     <div class="signup-group">
                         <div class="input-group col-xs-12 email-group">
-                            <input type="email" class="form-control" placeholder="Enter Your Email" id="email" required     data-validation-required-message="Please enter your email address.">
+                            <input type="email" class="form-control" placeholder="Enter your email" id="email" required     data-validation-required-message="Please enter your email address.">
                             <span class="input-group-addon"> Create Free Account </span>
                         </div>
                         
                          <div class="fb-login">
                             <div class="divider">
                                 <p class="divider-text">
-                                    Or 
+                                    or 
                                 </p>
                             </div>
                             <span class="fb-btn" onclick="fb_login();">
@@ -98,7 +98,6 @@
                         </div>
 
                     </div>
-                   
 
                 <img src="img/landing-icons.png" />
 
@@ -161,8 +160,8 @@
                         </div>
                     </div>
     
-                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                    <!--<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a> -->
 
                 </div>  
 
@@ -220,7 +219,8 @@
     </section> -->
 
     <!-- Features section --> 
-    <section id="features">
+    <section id="features" class="bg-light-gray">
+
         <div class="container">
           <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
@@ -228,7 +228,9 @@
             <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
             <li><a data-toggle="tab" href="#menu4">Menu 4</a></li>
           </ul>
+        </div>
 
+        <div class="content-container">
         <div class="tab-content">
           <div id="menu1" class="tab-pane fade in active">
             <h3>
@@ -253,8 +255,8 @@
             <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
           </div>
         </div>
-
         </div>
+
     </section>
 
     <!-- Signup Section -->
@@ -263,7 +265,7 @@
             <div class="intro-heading">It's Nice To Meet You</div>
                     
                     <div class="input-group signup-group email-group">
-                        <input type="email" class="form-control" placeholder="Your Email" id="email" required data-validation-required-message="Please enter your email address.">
+                        <input type="email" class="form-control" placeholder="Enter your email" id="email" required data-validation-required-message="Please enter your email address.">
                         <span class="input-group-addon"> Create Free Account </span>
                     </div>
 
@@ -356,7 +358,7 @@
         </div>
     </footer>
 
-    <!-- facebook -->
+    <!-- facebook login -->
     <script>
 
       window.fbAsyncInit = function() {
@@ -405,6 +407,9 @@
     
     </script>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
     <!-- testimonial carousel -->
     <script>
         $(document).ready(function() {
@@ -415,9 +420,6 @@
           });
         });
     </script>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
