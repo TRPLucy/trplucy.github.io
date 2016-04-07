@@ -2,7 +2,6 @@
 changes:
     - removed font: Montserrat, from a few places
  **/
-
 body {
     overflow-x: hidden;
     font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -106,7 +105,6 @@ h6 {
     color: #fff;
     background-color: #c41f24
 }
-
 @media (min-width: 768px) {
     .navbar-default {
         background-color: #fff;
@@ -145,9 +143,9 @@ header {
     color: #463E3F
 }
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    color: white;
+    padding-top: 30%;
+    padding-bottom: 10%;
+    color: #666;
 }
 header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -177,13 +175,36 @@ header img {
         width: 50%;
     }
 }
+@media (min-width: 768px) {
+    header .container {
+        height: 650px;
+    }
+    header .intro-text {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    header .intro-text .intro-lead-in {
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 20px
+    }
+    header .intro-text .intro-heading {
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 70px;
+        line-height: 75px;
+        margin-bottom: 10px
+    }
+}
 
 /* ------------ START email signup bar --------------- */
 .signup-group {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(600,600,600,0.3);
+    background-color: rgba(0,0,0,0.4);
     border-radius: 4px;
     max-width: 600px;
 }
@@ -224,6 +245,7 @@ header img {
 .signup-group .fb-login .divider .divider-text {
     display: inline;
     font-size: 18px;
+    color: white;
 }
 
 @media (max-width:505px) { 
@@ -264,7 +286,7 @@ header img {
         height: 1px;
         position: relative;
         vertical-align: middle;
-        width: 38%;
+        width: 45%;
     }
     .signup-group .fb-login {
         padding-top:  0;
@@ -317,29 +339,6 @@ header img {
 
 /* ------------ END email signup bar --------------- */
 
-@media (min-width: 768px) {
-    header .container {
-        height: 650px;
-    }
-    header .intro-text {
-        padding-top: 230px;
-        padding-bottom: 200px
-    }
-    header .intro-text .intro-lead-in {
-        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-style: italic;
-        font-size: 35px;
-        line-height: 40px;
-        margin-bottom: 20px
-    }
-    header .intro-text .intro-heading {
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        text-transform: uppercase;
-        font-size: 70px;
-        line-height: 75px;
-        margin-bottom: 10px
-    }
-}
 section {
     padding: 80px 0
 }
@@ -429,7 +428,7 @@ section#testimonials {
 
 #quote-carousel 
 {
-  padding-bottom: 6%;
+  padding-bottom: 4%;
   margin-top: 5px;
 }
 /* Control buttons  */
