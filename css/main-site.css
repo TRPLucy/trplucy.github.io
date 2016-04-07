@@ -229,7 +229,6 @@ header img {
 
 .signup-group .fb-login {
     margin: 0 auto;
-    padding-top: 2%;
     font-size: 18px;
 }
 .signup-group .fb-login .fb-btn {
@@ -246,6 +245,24 @@ header img {
     display: inline;
     font-size: 18px;
     color: white;
+}
+.signup-group .fb-login .divider .divider-text:after, .divider-text:before {
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 22.5%;
+}
+.signup-group .fb-login .fb-btn {
+    margin: 0 auto;
+    clear: both;
+    width: 50%;
+    display: block;
+    padding: 11px; 
 }
 
 @media (max-width:505px) { 
@@ -278,25 +295,10 @@ header img {
         margin-bottom: 5px;
     }
     .signup-group .fb-login .divider .divider-text:after, .divider-text:before {
-        background: rgba(0,0,0,0.2);
-        -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
-        box-shadow: 0 1px 0 rgba(255,255,255,0.5);
-        content: "";
-        display: inline-block;
-        height: 1px;
-        position: relative;
-        vertical-align: middle;
         width: 45%;
     }
-    .signup-group .fb-login {
-        padding-top:  0;
-    }
     .signup-group .fb-login .fb-btn {
-        clear: both;
-        width: auto;
         width: 100%;
-        display: block;
-        padding: 11px; 
     }
     .signup-group .fb-login .divider {
         padding-top: 1%;
