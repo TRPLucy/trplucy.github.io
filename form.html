@@ -27,7 +27,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- jQuery UI -->
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+
+  <!-- select2 -->
+  <link href="css/select2.min.css" rel="stylesheet"/>
  	
 </head>
 
@@ -99,8 +104,11 @@
 				</div>
 				<div class="col-sm-6 regular-field">
 					<label>
-						<select class="form-control" size="1">
-							<option value="All Neighbourhoods">All Neighbourhoods</option>
+						<select id="hoods" class="form-control" multiple="multiple">
+							<option value="All Neighbourhoods">Rosebank</option>
+							<option value="All Neighbourhoods">Davisville</option>
+							<option value="All Neighbourhoods">High Bush</option>
+							<option value="All Neighbourhoods">Hillcrest</option>
 						</select>
 					</label>
 				</div>
@@ -255,6 +263,12 @@
   	$("input[id$='email']").rules("add", {required:true});
   	$("input[id$='phone']").rules("add", {required:true});
   	$('select[id$=bestTimeToCall]').rules("add", {bestTimeToCall:true});
+  </script>
+
+  <!-- select2 -->
+  <script src="js/select2.min.js"></script>
+  <script>
+  	$("#hoods").select2();
   </script>
 
 </body>

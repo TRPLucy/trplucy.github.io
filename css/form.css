@@ -154,6 +154,7 @@ section#form {
 }
 .ui-slider-handle{
 	height: 23px !important;
+	cursor: pointer !important;
 }
 .ui-slider-range {
 	background: #68cc94 !important;
