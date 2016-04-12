@@ -10,6 +10,9 @@ section#heading h1 {
 }
 
 /* general form style overrides*/
+.input-group {
+	margin-bottom: 5px; 
+}
 .form-control, .input-group-addon{
 	border-radius: 1px; 
 }
@@ -204,6 +207,12 @@ section#form {
 }
 
 /* error styles (for form validation) */
-.error {
+input.error {
+	border-color: red;
+}
+label.error {
 	color: red;
+}
+select.error {
+	border-color: red;
 }

@@ -58,18 +58,19 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="row">
 				<div class="col-sm-6 regular-field">
 					<div class="input-group">
 						<span class="input-group-addon">
 							<i class="fa fa-phone"></i>
 						</span>
-						<input type="text" class="form-control" placeholder="Phone Number" id="phoneNumber"/>
+						<input type="text" class="form-control" placeholder="Phone Number" id="phone"/>
 					</div>
 				</div>
 				<div class="col-sm-6 regular-field">	
 					<label>
-						<select class="form-control" size="1">
+						<select class="form-control" size="1" id="bestTimeToCall">
 							<option value="Best Time to Call">Best Time to Call</option>
 							<option value="ASAP">ASAP</option>
 							<option value="Morning">Morning</option>
@@ -240,12 +241,20 @@
   <script src="js/jquery.validate.min.js"></script>
 
   <script>
+    jQuery.validator.addMethod("bestTimeToCall", function(value, element) {
+      return value!='Best Time to Call';
+      }, "Please select a valid time to call.");
+
   	$('#signup-form').validate({
   		errorPlacement: function(error, element) {
   			error.insertAfter(element.parent());
   		}
-  	});
-  	$('#fullName').rules("add", {required:true});
+    });
+
+  	$("input[id$='fullName']").rules("add", {required:true});
+  	$("input[id$='email']").rules("add", {required:true});
+  	$("input[id$='phone']").rules("add", {required:true});
+  	$('select[id$=bestTimeToCall]').rules("add", {bestTimeToCall:true});
   </script>
 
 </body>
