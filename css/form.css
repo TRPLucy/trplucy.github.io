@@ -202,3 +202,8 @@ section#form {
 		width: 40%;
 	}
 }
+
+/* error styles (for form validation) */
+.error {
+	color: red;
+}
