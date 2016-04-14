@@ -621,3 +621,15 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #e76569
 }
+
+/* ----- error styles -------- */
+
+label.error {
+    color: red;
+    font-weight: normal;
+    text-align: left;
+    clear: both;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 0;
+}

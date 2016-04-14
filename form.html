@@ -197,7 +197,7 @@
 			</div>
 
 			<div class="row signup-btn">
-				<button type="submit" class="btn">Sign Up</button>
+				<button type="submit" onSubmit="signup();" class="btn">Sign Up</button>
 			</div>
 
 		</div>
@@ -268,7 +268,9 @@
   <!-- select2 -->
   <script src="js/select2.min.js"></script>
   <script>
-  	$("#hoods").select2();
+  	$("#hoods").select2({
+  		placeholder: "Please select neighbourhoods"
+  	});
   </script>
 
 </body>

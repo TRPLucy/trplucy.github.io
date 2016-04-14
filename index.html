@@ -74,17 +74,19 @@
     </nav>
 
     <!-- Header -->
-    <header style="background-image: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)),url(./img/header-bg.jpg);" >
+    <header style="background-image: linear-gradient(to bottom, rgba(255,255,255, 0.2), rgba(255,255,255, 1)),url(./img/header-bg.jpg);" >
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading">It's Nice To Meet You</div>
                 <div class="intro-lead-in">All real estate listings on MLS®</div>
 
                     <div class="signup-group">
+                    <form>
                         <div class="input-group col-xs-12 email-group">
-                            <input type="email" class="form-control" placeholder="Enter your email" id="email" required     data-validation-required-message="Please enter your email address.">
-                            <span class="input-group-addon"> Create Free Account </span>
+                            <input type="email" class="form-control" placeholder="Enter your email" id="firstemail" required     data-validation-required-message="Please enter your email address.">
+                            <span class="input-group-addon" onclick="if (!$('form').valid()) return false; console.log('yay') "> Create Free Account </span>
                         </div>
+                    </form>
                         
                          <div class="fb-login">
                             <div class="divider">
@@ -271,10 +273,12 @@
         <div class="container">
             <div class="intro-heading">It's Nice To Meet You</div>
                     
+                    <form>
                     <div class="input-group signup-group email-group">
-                        <input type="email" class="form-control" placeholder="Enter your email" id="email" required data-validation-required-message="Please enter your email address.">
+                        <input type="email" class="form-control" placeholder="Enter your email" id="secondemail" required data-validation-required-message="Please enter your email address.">
                         <span class="input-group-addon"> Create Free Account </span>
                     </div>
+                    </form>
 
                 </div>
         </div>
@@ -438,6 +442,23 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <!-- jquery validation --> 
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+        $('form').each(function() {  // attach to all form elements on page
+            $(this).validate({       // initialize plugin on each form
+                errorPlacement: function(error, element) {
+                    error.insertAfter(element.parent());
+                }
+            });
+        });
+        $('input[id$=email]').rules("add", {required:true, email:true});
+        $('span.input-group-addon').click(function() {
+            if (!$('form').valid())
+            return false;
+        });
+    </script>
 
 </body>
 

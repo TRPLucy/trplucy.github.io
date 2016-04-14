@@ -63,7 +63,13 @@ span.select2-container {
 	min-height: 46px !important;
 	width:inherit !important;
 }
-
+ul.select2-selection__rendered {
+	padding-top: 5.5px !important; 
+	padding-bottom: 5.5px !important;
+}
+ul.select2-selection__rendered input {
+	padding-left: 5px !important; 
+}
 /* general form styles */
 body {
 	overflow-x: hidden;
