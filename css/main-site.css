@@ -303,6 +303,11 @@ header .container {
         padding-bottom: 1%;
     }
 }
+@media (max-width:344px) {
+    .signup-group .fb-login .divider .divider-text:after, .divider-text:before {
+        width: 43%;
+    }
+}
 
 @media (min-width:506px) { 
     .email-group .form-control {
