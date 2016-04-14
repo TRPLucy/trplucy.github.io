@@ -108,7 +108,7 @@ h6 {
 @media (min-width: 768px) {
     .navbar-default {
         background-color: #fff;
-        padding: 10px 0;
+        padding: 6px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -163,14 +163,15 @@ header .intro-text .intro-heading {
     margin-bottom: 25px
 }
 header img {
-    width: 80%;
+    padding-top: 2%;
+    width: 100%;
 }
 header .container {
     height: auto;
 }
 @media (min-width: 768px) {
     header img {
-        width: 60%;
+        width: 80%;
     }
     header .intro-text {
         padding-top: 13%;
@@ -193,7 +194,7 @@ header .container {
 }
 @media (min-width: 1200px) {
     header img {
-        width: 50%;
+        width: 70%;
     }
 }
 /* ------------ START email signup bar --------------- */
@@ -390,7 +391,8 @@ blockquote:after {
     vertical-align: -0.6em;
 }
 section#testimonials {
-    padding: 2% 0;
+    padding-bottom: 2%;
+    padding-top: 0; 
 }
 #testimonials .container {
     overflow: visible; 
@@ -413,7 +415,7 @@ section#testimonials {
         padding-top: 0px;
     }
     section#testimonials {
-        padding: 3% 0;
+        padding-bottom: 4%;
     }
     #testimonials .container {
         max-width: 800px; 
