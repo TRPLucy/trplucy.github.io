@@ -212,6 +212,11 @@ header .container {
     border-width: 0px; 
     border-radius: 3px;
 }
+.email-group input {
+    padding-top: 11px !important;
+    padding-bottom: 11px !important;
+    height: auto;
+}
 .email-group span {
     background-color: #da2328;
     border-color: white;
