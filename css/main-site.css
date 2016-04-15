@@ -167,7 +167,7 @@ header img {
     width: 100%;
 }
 header .container {
-    height: auto;
+    height: auto; 
 }
 @media (min-width: 768px) {
     header img {
