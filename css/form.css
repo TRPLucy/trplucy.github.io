@@ -70,6 +70,7 @@ ul.select2-selection__rendered {
 ul.select2-selection__rendered input {
 	padding-left: 5px !important; 
 }
+
 /* general form styles */
 body {
 	overflow-x: hidden;
@@ -236,3 +237,16 @@ label.error {
 select.error {
 	border-color: red;
 }
+
+/* styles specific to thank you page */
+/* youtube video */
+.youtube iframe{
+	display: block;
+	margin: 0 auto;
+}
+.browse-listings {
+	min-width: 280px !important; 
+}
+
+
+
