@@ -636,12 +636,14 @@ body {
 
 /* ----- error styles -------- */
 
-label.error {
-    color: red;
-    font-weight: normal;
-    text-align: left;
-    clear: both;
-    width: 100%;
-    padding-top: 1%;
-    padding-bottom: 0;
+.tooltip-inner {
+    background-color:#da2328;
+    color: white;
+    padding: 6px 11px;
+    font-size: 13px;
+    max-width: 100%; 
 }
+.tooltip-arrow {
+    border-top-color:#da2328 !important;
+}
+
