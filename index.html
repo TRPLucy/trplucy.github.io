@@ -447,41 +447,26 @@
     <script>
         $('form').each(function() {  // attach to all form elements on page
             $(this).validate({       // initialize plugin on each form
-                errorPlacement: function(error, element) {
-                    error.insertAfter(element.parent());
+                rules: {
+                    "input[id$=email]": {required:true, email:true}
                 }
+                tooltip_options: {
+                    "input[id$=email]": {trigger:'focus'}
+                }
+
             });
         });
-        $('input[id$=email]').rules("add", {required:true, email:true});
+       // $('input[id$=email]').rules("add", {required:true, email:true});
         $('span.input-group-addon').click(function() {
             if (!$('form').valid())
             return false;
         });
+
     </script>
 
-    <!-- placeholder fix -->
-    <!--<script>
-    	$('[placeholder]').focus(function() {
-		  var input = $(this);
-		  if (input.val() == input.attr('placeholder')) {
-		    input.val('');
-		    input.removeClass('placeholder');
-		  }
-		}).blur(function() {
-		  var input = $(this);
-		  if (input.val() == '' || input.val() == input.attr('placeholder')) {
-		    input.addClass('placeholder');
-		    input.val(input.attr('placeholder'));
-		  }
-		}).blur().parents('form').submit(function() {
-		  $(this).find('[placeholder]').each(function() {
-		    var input = $(this);
-		    if (input.val() == input.attr('placeholder')) {
-		      input.val('');
-		    }
-		  })
-		});
-    </script>-->
+    <!-- tooltip integration -->
+    <script src="js/jquery-validate.bootstrap-tooltip.min.js"></script>
+
 
 </body>
 
