@@ -141,14 +141,22 @@ section#form {
 .property-types {
 	padding-top: 20px;
 }
-.checkbox-tile input {
+.property-types .checkbox-tile input {
 	margin-right: 4px; 
 }
-.checkbox-tile {
+.property-types .checkbox-tile {
 	cursor: pointer;
 	border: lightgray solid 1px;
-	padding-top: 12px;
 	border-radius: 1px; 
+	text-align: center;
+	padding: 12px 0px;
+	background-color: white;
+}
+.property-types .checkbox-tile:hover {
+	background-color: lightgray
+}
+.property-types .col-xs-6 {
+	padding-top: 12px; 
 }
 
 /* slider */
