@@ -115,23 +115,35 @@
 			</div>
 
 			<div class="row property-types">
-				<div class="col-xs-6 col-sm-4 checkbox-tile">
-					<input type="checkbox">Condominium
+				<div class="col-xs-6 col-sm-4">
+					<div class="checkbox-tile">
+						<input type="checkbox">Condominium
+					</div>
 				</div>
-				<div class="col-xs-6 col-sm-4 checkbox-tile">
-					<input type="checkbox">Condo Townhouse
+				<div class="col-xs-6 col-sm-4">
+					<div class="checkbox-tile">
+						<input type="checkbox">Condo Townhouse
+					</div>
 				</div>
-				<div class="col-xs-6 col-sm-4 checkbox-tile">
-					<input type="checkbox">Detached
+				<div class="col-xs-6 col-sm-4">
+					<div class="checkbox-tile">
+						<input type="checkbox">Detached
+					</div>
 				</div>
-				<div class="col-xs-6 col-sm-4 checkbox-tile">
-					<input type="checkbox">Semi-Detached
+				<div class="col-xs-6 col-sm-4">
+					<div class="checkbox-tile">
+						<input type="checkbox">Semi-Detached
+					</div>
 				</div>
-				<div class="col-xs-6 col-sm-4 checkbox-tile">
-					<input type="checkbox">Townhouse
+				<div class="col-xs-6 col-sm-4">
+					<div class="checkbox-tile">
+						<input type="checkbox">Townhouse
+					</div>
 				</div>
-				<div class="col-xs-6 col-sm-4 checkbox-tile">
-					<input type="checkbox">Other
+				<div class="col-xs-6 col-sm-4">
+					<div class="checkbox-tile">
+						<input type="checkbox">Other
+					</div>
 				</div>
 			</div>
 
@@ -271,6 +283,20 @@
   	$("#hoods").select2({
   		placeholder: "Please select neighbourhoods"
   	});
+  </script>
+
+  <!-- javscript to style checkbox tiles -->
+  <script>
+  	$('.checkbox-tile').on('click', function() {
+  		console.log($(this).css('border') );
+  		if ($(this).css('border') == '1px solid rgb(0, 0, 0)') {
+  			$(this).css('border', 'lightgray solid 1px');
+  			$(this).children('input').prop('checked', false);
+  		} else {
+  			$(this).css('border', 'rgb(0, 0, 0) solid 1px');
+  			$(this).children('input').prop('checked', true);
+  		}
+  	})
   </script>
 
 </body>

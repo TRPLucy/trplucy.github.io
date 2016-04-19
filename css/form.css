@@ -9,7 +9,7 @@ section#heading h1 {
 	font-weight: bold;
 }
 
-/* general form style overrides*/
+/* general form styles */
 .input-group {
 	margin-bottom: 5px; 
 }
@@ -145,7 +145,10 @@ section#form {
 	margin-right: 4px; 
 }
 .checkbox-tile {
+	cursor: pointer;
+	border: lightgray solid 1px;
 	padding-top: 12px;
+	border-radius: 1px; 
 }
 
 /* slider */
@@ -247,6 +250,3 @@ select.error {
 .browse-listings {
 	min-width: 280px !important; 
 }
-
-
-
