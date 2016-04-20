@@ -74,7 +74,7 @@ ul.select2-selection__rendered input {
 /* general form styles */
 body {
 	overflow-x: hidden;
-	font-family: Avenir Next, Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #fbfbfb; 
 }
 .regular-field {
@@ -138,15 +138,20 @@ section#form {
 }
 
 /* property types */
+.section-heading {
+	padding-top: 30px;
+	letter-spacing: 1.3px;
+	text-transform: uppercase;
+}
 .property-types {
-	padding-top: 20px;
+	padding-top: 0px;
 }
 .property-types .checkbox-tile input {
 	margin-right: 4px; 
 }
 .property-types .checkbox-tile {
 	cursor: pointer;
-	border: lightgray solid 1px;
+	border: lightgray solid 2px;
 	border-radius: 1px; 
 	text-align: center;
 	padding: 12px 0px;
@@ -158,11 +163,21 @@ section#form {
 .property-types .col-xs-6 {
 	padding-top: 12px; 
 }
+@media (min-width: 992px) {
+	.property-types {
+		padding-left: 13px;
+		padding-right: 13px; 
+	}
+	.property-types .col-xs-6 {
+		padding-left:4px;
+		padding-right:4px;
+	}
+}
 
 /* slider */
 .slider-label {
 	margin: 0 auto;
-	padding-top: 40px; 
+	padding-top: 20px; 
 }
 .slider-label input {
 	border:0; 

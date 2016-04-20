@@ -94,6 +94,10 @@
 				</div>
 			</div>
 
+			<div class="section-heading">
+				<b> Location </b>
+			</div>
+
 			<div class="row">
 				<div class="col-sm-6 regular-field">
 					<label>
@@ -114,37 +118,51 @@
 				</div>
 			</div>
 
+			<div class="section-heading">
+				<b> Property Types </b>
+			</div>
 			<div class="row property-types">
-				<div class="col-xs-6 col-sm-4">
-					<div class="checkbox-tile">
-						<input type="checkbox">Condominium
-					</div>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<div class="checkbox-tile">
-						<input type="checkbox">Condo Townhouse
-					</div>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<div class="checkbox-tile">
-						<input type="checkbox">Detached
-					</div>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<div class="checkbox-tile">
-						<input type="checkbox">Semi-Detached
-					</div>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<div class="checkbox-tile">
-						<input type="checkbox">Townhouse
-					</div>
-				</div>
-				<div class="col-xs-6 col-sm-4">
-					<div class="checkbox-tile">
-						<input type="checkbox">Other
-					</div>
-				</div>
+
+                <div class="col-xs-6 col-sm-4 col-md-2 first-tile">
+                    <div class="checkbox-tile" id="detached">
+                      	<img src="img/icons/buildings/Detached.svg" />
+                      	Detached
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <div class="checkbox-tile" id="semi-detached">
+                        <img src="img/icons/buildings/Semi-detached.svg" />
+                        Semi-Detached
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <div class="checkbox-tile" id="townhouse">
+                        <img src="img/icons/buildings/Townhouse.svg" />
+                        Townhouse
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <div class="checkbox-tile" id="condo-apt">
+                    	<img src="img/icons/buildings/Condo.svg" />
+                        Condo
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <div class="checkbox-tile" id="bungalow">
+                    	<img src="img/icons/buildings/Bungalow.svg" />
+                        Bungalow
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2 last-tile">
+                    <div class="checkbox-tile" id="loft">
+                    	<img src="img/icons/buildings/Loft.svg" />
+                        Loft
+                    </div>
+                </div>
+			</div>
+
+			<div class="section-heading">
+				<b> Price Range </b>
 			</div>
 
 			<div class="row slider-label">
@@ -163,7 +181,8 @@
 			</div>
 
 			<div class="row last-row">
-				<div class="col-xs-6 col-sm-2 regular-field">
+
+				<div class="col-xs-6 col-sm-6 regular-field">
 					<label>
 						<select class="form-control" size="1">
 							<option value="Best Time to Call">Beds</option>
@@ -175,7 +194,8 @@
 						</select>
 					</label>
 				</div>
-				<div class="col-xs-6 col-sm-2 regular-field">
+
+				<div class="col-xs-6 col-sm-6 regular-field">
 					<label>
 						<select class="form-control" size="1">
 							<option value="Best Time to Call">Baths</option>
@@ -186,7 +206,7 @@
 						</select>
 					</label>
 				</div>
-				<div class="col-xs-6 col-sm-4 regular-field">
+				<div class="col-xs-6 col-sm-6 regular-field">
 					<label>
 						<select class="form-control" size="1">
 							<option value="Best Time to Call">Planning to buy in?</option>
@@ -197,7 +217,7 @@
 						</select>
 					</label>
 				</div>
-				<div class="col-xs-6 col-sm-4 regular-field">
+				<div class="col-xs-6 col-sm-6 regular-field">
 					<label>
 						<select class="form-control" size="1">
 							<option value="Best Time to Call">Has secured financing?</option>
@@ -206,6 +226,7 @@
 						</select>
 					</label>
 				</div>
+
 			</div>
 
 			<div class="row signup-btn">
@@ -289,11 +310,11 @@
   <script>
   	$('.checkbox-tile').on('click', function() {
   		console.log($(this).css('border') );
-  		if ($(this).css('border') == '1px solid rgb(0, 0, 0)') {
-  			$(this).css('border', 'lightgray solid 1px');
+  		if ($(this).css('border') == '2px solid rgb(0, 0, 0)') {
+  			$(this).css('border', 'lightgray solid 2px');
   			$(this).children('input').prop('checked', false);
   		} else {
-  			$(this).css('border', 'rgb(0, 0, 0) solid 1px');
+  			$(this).css('border', 'rgb(0, 0, 0) solid 2px');
   			$(this).children('input').prop('checked', true);
   		}
   	})
