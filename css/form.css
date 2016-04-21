@@ -74,7 +74,7 @@ ul.select2-selection__rendered input {
 /* general form styles */
 body {
 	overflow-x: hidden;
-	font-family: Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Avenir Next, Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #fbfbfb; 
 }
 .regular-field {
@@ -221,6 +221,13 @@ section#form {
 /* beds, baths, etc*/
 .last-row {
 	padding-top: 20px; 
+}
+.last-row .form-control {
+	position: static;
+}
+.last-row img {
+	max-height: 38px;
+	max-width: 38px; 
 }
 
 /* signup button */
