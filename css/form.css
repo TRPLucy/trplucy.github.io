@@ -17,7 +17,8 @@ section#heading h1 {
 	border-radius: 1px; 
 }
 input.form-control{
-	padding: 22px;
+	padding: 12.2px;
+	height: auto;
 }
 label {
 	font-weight: 400;
