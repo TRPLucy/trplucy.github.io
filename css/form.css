@@ -140,6 +140,8 @@ section#form {
 /* property types */
 .section-heading {
 	padding-top: 30px;
+}
+.section-heading b{
 	letter-spacing: 1.3px;
 	text-transform: uppercase;
 }
@@ -156,6 +158,10 @@ section#form {
 	text-align: center;
 	padding: 12px 0px;
 	background-color: white;
+	font-weight: bold;
+}
+.property-types .checkbox-tile img{
+	margin-bottom: -13px;
 }
 .property-types .checkbox-tile:hover {
 	background-color: lightgray
@@ -226,12 +232,11 @@ section#form {
 	position: static;
 }
 .last-row .input-group-addon {
-	padding-right:50px; 
-	padding-left: 5px;
+	padding: 5px;
 }
 .last-row img {
-	max-height: 38px;
-	max-width: 38px; 
+	height: 32px;
+	width: 32px; 
 }
 
 /* signup button */
