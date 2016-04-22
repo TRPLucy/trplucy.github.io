@@ -375,7 +375,7 @@ section h3.section-subheading {
 blockquote {
   border: none;
   margin: 0;
-  padding: 0.5em 10px;
+  padding: 0.5em 10px 0 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
@@ -389,7 +389,6 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
-  font-style: italic;
 }
 blockquote:after { 
     font-family: Helvetica;
@@ -400,6 +399,11 @@ blockquote:after {
     margin-left: 0.25em;
     vertical-align: -0.6em;
 }
+.quote-source {
+    text-align: center;
+    padding-bottom: 30px;
+    font-style: italic
+}
 section#testimonials {
     padding-bottom: 2%;
     padding-top: 0; 
@@ -408,7 +412,7 @@ section#testimonials {
     overflow: visible; 
     height: auto;
     width: 100%;
-    max-width: 600px; 
+    max-width: 700px; 
 }
 #testimonials img {
     display: block;
@@ -428,7 +432,7 @@ section#testimonials {
         padding-bottom: 4%;
     }
     #testimonials .container {
-        max-width: 800px; 
+        max-width: 850px; 
     }
 }
 @media (min-width: 1200px) {
@@ -522,6 +526,9 @@ section#features {
 #features .nav-tabs {
     font-size: 20px; 
 }
+#features ul.nav-tabs {
+    border: none;
+}
 #features .nav-tabs a {
     color: gray;
 }
@@ -554,6 +561,31 @@ section#features {
 #features .tab-content {
     width: 80%;
     margin: 0 auto;
+}
+#features .panel-logo {
+    font-size: 37px;
+}
+#features .panel-title {
+    font-size: 20px;
+}
+#features .tab-pane {
+    padding-bottom: 5%
+}
+#features .tab-pane ul{
+    padding-left:15px
+}
+#features .tab-pane h3{
+    color: gray;
+    padding-bottom: 1%;
+    text-transform: none
+}
+@media (max-width: 766px) {
+    #features .panel-logo {
+        font-size: 30px;
+    }
+    #features .panel-title {
+        font-size: 14px;
+    }
 }
 /* ---------------- END features ---------------- */
 

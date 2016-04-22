@@ -229,7 +229,7 @@ section#form {
 .last-row {
 	padding-top: 45px; 
 }
-.last-row .form-control {
+.regular-field .form-control {
 	position: static;
 }
 .last-row .input-group-addon {
