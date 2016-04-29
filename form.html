@@ -105,8 +105,10 @@
 							<span class="input-group-addon">
 								<i class="fa fa-map-marker"></i>
 							</span>
-							<select class="form-control" size="1">
+							<select id="location" class="form-control" size="1">
 								<option value="Toronto">Toronto</option>
+								<option value="Toronto">Toronto1</option>
+								<option value="Toronto">Toronto2</option>
 							</select>
 						</div>
 					</label>
@@ -275,6 +277,7 @@
 
 			<div class="row signup-btn">
 				<button type="submit" onSubmit="signup();" class="btn">Sign Up</button>
+				<div class="disclaimer">By registering you accept our <a href="https://www.theredpin.com/terms/">terms of use</a> and <a href="https://www.theredpin.com/privacy/">privacy policy</a>.</div>
 			</div>
 
 		</div>
@@ -336,9 +339,9 @@
   		}
     });
 
-  	$("input[id$='fullName']").rules("add", {required:true});
-  	$("input[id$='email']").rules("add", {required:true});
-  	$("input[id$='phone']").rules("add", {required:true});
+  	$("input[id$='fullName']").rules("add", {required: true});
+  	$("input[id$='email']").rules("add", {required: true});
+  	$("input[id$='phone']").rules("add", {required: true});
   	$('select[id$=bestTimeToCall]').rules("add", {bestTimeToCall:true});
   </script>
 
@@ -348,6 +351,7 @@
   	$("#hoods").select2({
   		placeholder: "Please select neighbourhoods"
   	});
+  	$("#location").select2({minimumResultsForSearch: Infinity});
   </script>
 
   <!-- javscript to style checkbox tiles -->
@@ -357,6 +361,7 @@
   		if ($(this).css('border') == '2px solid rgb(0, 0, 0)') {
   			$(this).css('border', 'lightgray solid 2px');
   			$(this).children('input').prop('checked', false);
+  			$(this).children('img.gray-icon').css('display','none');
   		} else {
   			$(this).css('border', 'rgb(0, 0, 0) solid 2px');
   			$(this).children('input').prop('checked', true);

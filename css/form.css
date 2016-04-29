@@ -1,8 +1,9 @@
 /* heading styles */
+
 section#heading {
 	margin: 0 auto;
 	text-align: center; 
-	padding-top: 30px; 
+	padding-top: 10px; 
 	max-width: 85%; 
 }
 section#heading h1 {
@@ -24,7 +25,7 @@ label {
 	font-weight: 400;
 	width: 100%; 
 } 
-label:after {
+.selectdiv label:after {
 	content:"\f107";
     font-family: FontAwesome;
     color: #000;
@@ -36,7 +37,7 @@ label:after {
     pointer-events: none;    
 }
 @media (min-width: 1200px) {
-	label:after {
+	.selectdiv label:after {
 		top: 28px;
 	}
 }
@@ -87,7 +88,7 @@ body {
 	background-color: #fbfbfb; 
 }
 section#form {
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-bottom: 30px;
 }
 @media (min-width: 768px) {
@@ -102,7 +103,7 @@ section#form {
 		box-shadow: 0 0 3px #bfbfbf;
 	}
 	section#form {
-		padding-top: 50px; 
+		padding-top: 20px; 
 		padding-bottom: 80px;
 	}
 }
@@ -139,6 +140,9 @@ section#form {
 }
 
 /* property types */
+.property-types .black-icon {
+	display: none;
+}
 .section-heading {
 	padding-top: 30px;
 }
@@ -160,6 +164,7 @@ section#form {
 	padding: 12px 0px;
 	background-color: white;
 	font-weight: bold;
+	color: gray;
 }
 .property-types .checkbox-tile img{
 	margin-bottom: -13px;
@@ -185,6 +190,7 @@ section#form {
 .slider-label {
 	margin: 0 auto;
 	padding-top: 20px; 
+	font-size: 16px;
 }
 .slider-label input {
 	border:0; 
@@ -203,17 +209,24 @@ section#form {
 	float:right;
 }
 .slider {
-	padding-top: 5px; 
+	padding-top: 10px; 
 }
 .ui-slider-handle{
-	height: 23px !important;
+	height: 46px !important;
 	cursor: pointer !important;
+	background: #e6e6e6 !important;
+	border: 2px solid #aaa !important;
+	top: -9px !important; 
+	width: 1.8em !important; 
+}
+.ui-slider-handle:hover {
+	background: lightgray!important;
 }
 .ui-slider-range {
 	background: #68cc94 !important;
 }
 #slider-range {
-	height: 15px;
+	height: 28px;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -232,10 +245,10 @@ section#form {
 .regular-field .form-control {
 	position: static;
 }
-.last-row .input-group-addon {
+.selectlist .input-group-addon {
 	padding: 5px;
 }
-.last-row img {
+.selectlist img {
 	height: 32px;
 	width: 32px; 
 }
@@ -256,7 +269,7 @@ section#form {
 	background-color: #68cc94;
 	letter-spacing: 2.4px;
 	font-weight: 500;
-	padding: 9px 20px;
+	padding: 18px 20px;
 	text-transform: uppercase;
 	transition: background-color 0.3s ease-in;
 }
@@ -268,6 +281,14 @@ section#form {
 	.btn {
 		width: 40%;
 	}
+}
+
+.disclaimer {
+	padding-top: 10px; 
+	color: #999;
+}
+.disclaimer a{
+	color: #999;
 }
 
 /* error styles (for form validation) */
